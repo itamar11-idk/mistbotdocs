@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MistBot Documentation | Google Style</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Google+Sans:wght@400;500;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffffff;
+            color: #3c4043;
+        }
+
+        h1, h2, h3, h4, .font-google {
+            font-family: 'Google Sans', sans-serif;
+        }
+
+        .sidebar-active {
+            background-color: #e8f0fe;
+            color: #1967d2;
+            font-weight: 500;
+            border-radius: 0 20px 20px 0;
+        }
+
+        .sidebar-item {
+            padding: 8px 24px;
+            display: block;
+            color: #5f6368;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+
+        .sidebar-item:hover {
+            background-color: #f1f3f4;
+            color: #202124;
+            border-radius: 0 20px 20px 0;
+        }
+
+        .code-inline {
+            background-color: #f1f3f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.9em;
+            color: #d93025;
+        }
+
+        .doc-section {
+            padding-bottom: 4rem;
+            margin-bottom: 4rem;
+            border-bottom: 1px solid #e8eaed;
+        }
+
+        .header-shadow {
+            box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 2px 6px 2px rgba(60,64,67,.15);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Clean Google Style Header -->
+    <header class="fixed top-0 w-full bg-white z-50 border-b border-gray-200">
+        <div class="flex items-center justify-between px-4 h-16">
+            <div class="flex items-center gap-4">
+                <button class="p-2 text-gray-600 lg:hidden">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-robot text-blue-600 text-2xl"></i>
+                    <span class="text-[22px] text-[#5f6368] font-google">MistBot <span class="font-normal">Developers</span></span>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <!-- Search bar and action buttons removed for cleaner UI -->
+            </div>
+        </div>
+    </header>
+
+    <div class="flex pt-16 min-h-screen">
+        <!-- Google Style Sidebar -->
+        <aside class="hidden lg:block w-72 fixed h-[calc(100vh-64px)] overflow-y-auto border-r border-gray-200 py-6 pr-4">
+            <nav class="space-y-1">
+                <div class="mb-6">
+                    <h5 class="px-6 text-[11px] font-bold text-gray-500 uppercase tracking-wider mb-2">Get Started</h5>
+                    <a href="#overview" class="sidebar-item sidebar-active">Overview</a>
+                    <a href="#partnership" class="sidebar-item">Partnership</a>
+                </div>
+                
+                <div class="mb-6">
+                    <h5 class="px-6 text-[11px] font-bold text-gray-500 uppercase tracking-wider mb-2">The Marketplace</h5>
+                    <a href="#commands" class="sidebar-item">General Commands</a>
+                    <a href="#mechanics" class="sidebar-item">Bump Mechanics</a>
+                </div>
+
+                <div class="mb-6">
+                    <h5 class="px-6 text-[11px] font-bold text-gray-500 uppercase tracking-wider mb-2">Staff Resources</h5>
+                    <a href="#staff-setup" class="sidebar-item">Server Configuration</a>
+                    <a href="#automation" class="sidebar-item">Automated Setup</a>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="flex-1 lg:ml-72 px-6 py-10 md:px-12 max-w-4xl">
+            
+            <!-- Breadcrumbs -->
+            <div class="flex items-center gap-2 text-xs text-gray-500 mb-8">
+                <span>Documentation</span>
+                <i class="fas fa-chevron-right text-[8px]"></i>
+                <span>Get Started</span>
+                <i class="fas fa-chevron-right text-[8px]"></i>
+                <span class="text-gray-900">Overview</span>
+            </div>
+
+            <!-- Overview -->
+            <section id="overview" class="doc-section">
+                <h1 class="text-[40px] leading-tight font-google text-[#202124] mb-4">Collaboration with MistBot: The Beginning</h1>
+                <p class="text-lg text-[#5f6368] mb-8 leading-relaxed">
+                    Welcome to the official integration guide for MistBot. This project introduces a multi-server trade link system designed to synchronize the marketplace experience across the Discord ecosystem.
+                </p>
+                
+                <div class="bg-[#f8f9fa] border border-gray-200 rounded-lg p-6 mb-8">
+                    <h3 class="font-google text-lg text-[#202124] mb-2">Key Highlights</h3>
+                    <ul class="space-y-3 text-[#5f6368]">
+                        <li class="flex gap-3">
+                            <i class="fas fa-check text-green-600 mt-1"></i>
+                            <span><strong class="text-gray-900">Global Trade Link:</strong> Post offers that appear across all participating servers instantly.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fas fa-check text-green-600 mt-1"></i>
+                            <span><strong class="text-gray-900">Discovery Engine:</strong> Advanced search functionality to find specific buyers and sellers.</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Partnership Section -->
+            <section id="partnership" class="doc-section">
+                <h2 class="text-[28px] font-google text-[#202124] mb-6">Partnership & Development</h2>
+                <p class="text-[#5f6368] mb-8">
+                    This initiative is a high-level collaboration between <span class="font-bold text-gray-900">Pixel's Palace</span> and the <span class="font-bold text-gray-900">MistBot team</span>.
+                </p>
+                
+                <div class="grid sm:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-sm font-bold text-gray-900 uppercase tracking-tighter mb-4">Core Development</h4>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                                    <i class="fas fa-user text-sm"></i>
+                                </div>
+                                <span class="text-sm font-medium text-gray-700">itamar11_</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                                    <i class="fas fa-user text-sm"></i>
+                                </div>
+                                <span class="text-sm font-medium text-gray-700">imsaifu7</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                                    <i class="fas fa-user text-sm"></i>
+                                </div>
+                                <span class="text-sm font-medium text-gray-700">orewa.mist4</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-gray-900 uppercase tracking-tighter mb-4">Management</h4>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center text-purple-600">
+                                <i class="fas fa-shield-alt text-sm"></i>
+                            </div>
+                            <span class="text-sm font-medium text-gray-700">Pixel's Palace Staff</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Marketplace -->
+            <section id="commands" class="doc-section">
+                <h2 class="text-[28px] font-google text-[#202124] mb-6">Marketplace Interaction</h2>
+                <p class="text-[#5f6368] mb-6">Users can interact with the global trading hub using the following commands:</p>
+                
+                <table class="w-full border-collapse text-sm mb-8 text-left">
+                    <thead>
+                        <tr class="border-b border-gray-200">
+                            <th class="py-3 font-bold text-gray-900 w-1/3">Command</th>
+                            <th class="py-3 font-bold text-gray-900">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-[#5f6368]">
+                        <tr class="border-b border-gray-100">
+                            <td class="py-4"><span class="code-inline">,market</span></td>
+                            <td class="py-4">Entry point for all marketplace interactions.</td>
+                        </tr>
+                        <tr class="border-b border-gray-100">
+                            <td class="py-4"><span class="code-inline">post</span></td>
+                            <td class="py-4">Broadcasts a trade offer across all servers in the feed.</td>
+                        </tr>
+                        <tr class="border-b border-gray-100">
+                            <td class="py-4"><span class="code-inline">search trades</span></td>
+                            <td class="py-4">Search for specific items or "Looking For" requests globally.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div id="mechanics" class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-600">
+                    <h3 class="text-blue-800 font-bold mb-2 flex items-center gap-2">
+                        <i class="fas fa-info-circle"></i> Bump Mechanic
+                    </h3>
+                    <p class="text-blue-900 text-sm leading-relaxed">
+                        To maintain a fresh marketplace, un-bumped offers are removed after <strong>6 hours</strong>. Bumping an offer resets this timer and moves it to the top of the global trading feed.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Staff -->
+            <section id="staff-setup" class="doc-section">
+                <h2 class="text-[28px] font-google text-[#202124] mb-6">Staff Administration</h2>
+                
+                <div class="space-y-8">
+                    <div>
+                        <h4 class="text-gray-900 font-bold mb-2 text-sm uppercase tracking-wider">Individual Configuration</h4>
+                        <ul class="list-disc pl-5 space-y-2 text-[#5f6368] text-sm">
+                            <li><span class="code-inline">/set-feed</span>: Establishes the live trade feed for the server.</li>
+                            <li><span class="code-inline">/settradechannel</span>: Restricts market commands to a specific channel.</li>
+                        </ul>
+                    </div>
+
+                    <div id="automation" class="bg-gray-50 border border-gray-200 rounded-lg p-6">
+                        <h4 class="text-gray-900 font-bold mb-4 flex items-center gap-2">
+                            <i class="fas fa-magic text-blue-600"></i> Automated Setup
+                        </h4>
+                        <p class="text-sm text-[#5f6368] mb-4">Run <span class="code-inline">/setup-mist</span> to apply standard configurations immediately:</p>
+                        <div class="bg-white border border-gray-300 rounded p-4 font-mono text-xs text-gray-700 space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span>MARKET_COMMAND_ROOT</span>
+                                <span class="text-blue-600 bg-blue-50 px-2 py-0.5 rounded">#1359594069881524415</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>GLOBAL_TRADING_FEED</span>
+                                <span class="text-blue-600 bg-blue-50 px-2 py-0.5 rounded">#1459905743539933397</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="pt-10 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+                <div class="flex items-center gap-4 mb-4 md:mb-0">
+                    <span class="hover:text-blue-600 cursor-pointer">Privacy Policy</span>
+                    <span class="hover:text-blue-600 cursor-pointer">Terms of Service</span>
+                </div>
+                <p>&copy; 2026 MistBot & Pixel's Palace Partnership.</p>
+            </footer>
+        </main>
+
+        <!-- Right Side TOC -->
+        <aside class="hidden xl:block w-64 p-8 sticky top-16 h-screen overflow-y-auto">
+            <h5 class="text-[11px] font-bold text-gray-900 uppercase tracking-wider mb-4">On this page</h5>
+            <ul class="space-y-3 text-xs text-gray-500">
+                <li><a href="#overview" class="hover:text-blue-600 transition-colors">Overview</a></li>
+                <li><a href="#partnership" class="hover:text-blue-600 transition-colors">Partnership</a></li>
+                <li><a href="#commands" class="hover:text-blue-600 transition-colors">Commands</a></li>
+                <li><a href="#mechanics" class="hover:text-blue-600 transition-colors">Bump Mechanics</a></li>
+                <li><a href="#staff-setup" class="hover:text-blue-600 transition-colors">Staff Setup</a></li>
+            </ul>
+        </aside>
+    </div>
+
+</body>
+</html>
