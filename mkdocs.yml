@@ -17,3 +17,5 @@ nav:
       - Vouching System: vouches/system.md
   - Credits:
       - Contributors: contributors.md
+  - Legal:
+      - Terms of Service: tos.md
