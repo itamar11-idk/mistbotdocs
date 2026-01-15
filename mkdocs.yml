@@ -1,20 +1,20 @@
 site_name: MistBot Documentation
-site_url: https://itamar11-idk.github.io/mistbotdocs/
-
 theme:
   name: material
-  palette:
-    primary: black  # Professional "Google" feel
-    accent: blue
+  font:
+    text: Roboto  # Professional Google font
   features:
-    - navigation.tabs  # This creates the top tabs you wanted
-    - navigation.sections
-    - search.highlight
+    - navigation.tabs        # Top-level tabs
+    - navigation.tabs.sticky # Keeps tabs visible while scrolling
+    - navigation.sections    # Organized sidebar groupings
+    - search.highlight       # High-quality search experience
 
 nav:
   - Home: index.md
   - 🛍️ Market:
       - Overview: market/overview.md
       - Scraper: market/scraper.md
+      - Search Engine: market/search.md
   - 🛡️ Reputation:
-      - Levels: rep/levels.md
+      - Trader Levels: rep/levels.md
+      - Carrier Vouchers: rep/carries.md
