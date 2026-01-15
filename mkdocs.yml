@@ -13,8 +13,5 @@ nav:
   - Home: index.md
   - 🛍️ Market:
       - Overview: market/overview.md
-      - Scraper: market/scraper.md
-      - Search Engine: market/search.md
   - 🛡️ Reputation:
-      - Trader Levels: rep/levels.md
       - Carrier Vouchers: rep/carries.md
