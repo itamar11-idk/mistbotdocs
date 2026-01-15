@@ -15,3 +15,5 @@ nav:
       - Overview: market/overview.md
   - Vouches:
       - Vouching System: vouches/system.md
+  - Credits:
+      - Contributors: contributors.md
