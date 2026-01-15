@@ -1,0 +1,20 @@
+site_name: MistBot Documentation
+site_url: https://yourusername.github.io/mist-docs/
+
+theme:
+  name: material
+  palette:
+    primary: black  # Professional "Google" feel
+    accent: blue
+  features:
+    - navigation.tabs  # This creates the top tabs you wanted
+    - navigation.sections
+    - search.highlight
+
+nav:
+  - Home: index.md
+  - 🛍️ Market:
+      - Overview: market/overview.md
+      - Scraper: market/scraper.md
+  - 🛡️ Reputation:
+      - Levels: rep/levels.md
