@@ -11,7 +11,7 @@ theme:
 
 nav:
   - Home: index.md
-  - 🛍️ Market:
+  - Market:
       - Overview: market/overview.md
-  - 🛡️ Reputation:
-      - Carrier Vouchers: rep/carries.md
+  - Vouches:
+      - Vouching System: vouches/system.md
