@@ -15,6 +15,9 @@ nav:
       - Overview: market/overview.md
   - Vouches:
       - Vouching System: vouches/system.md
+  - MistAI:
+      - Overview: ai/overview.md
+      - Usage & Limits: ai/usage.md
   - Credits:
       - Contributors: contributors.md
   - Legal:
