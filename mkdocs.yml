@@ -11,14 +11,20 @@ theme:
 
 nav:
   - Home: index.md
-  - Market:
-      - Overview: market/overview.md
-  - Vouches:
-      - Vouching System: vouches/system.md
-  - MistAI:
-      - Overview: ai/overview.md
-      - Usage & Limits: ai/usage.md
-  - Credits:
-      - Contributors: contributors.md
-  - Legal:
-      - Terms of Service: tos.md
+  - Core: modules/bot.md
+  - Trading & Market:
+      - Marketplace: modules/marketplace.md
+      - Item Values: modules/values.md
+      - Auto-Connect: modules/mist_connect.md
+  - Recruitment:
+      - Lobbies: modules/lobby.md
+      - Vouching System: modules/vouches.md
+  - AI Assistant: modules/mist_ai.md
+  - Security: modules/security.md
+  - Staff & Config:
+      - Admin Tools: modules/admin.md
+      - Setup Wizard: modules/setup.md
+      - Maintenance: modules/developer.md
+  - Info:
+      - General: modules/general.md
+      - Help: modules/help.md
