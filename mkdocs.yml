@@ -28,3 +28,7 @@ nav:
   - Info:
       - General: modules/general.md
       - Help: modules/help.md
+  - Credits:
+      - Contributors: contributors.md
+  - Legal:
+      - Terms of Service: tos.md
