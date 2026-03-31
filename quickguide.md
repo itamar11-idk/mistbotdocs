@@ -290,5 +290,3 @@ Confirm `/settradechannel` is configured correctly.
 - Lobby commands failing:
 Confirm lobby category and channels are configured and visible to users.
 
-- AI command not answering:
-Check bot status and whether AI module is active in your deployment.
